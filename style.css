@@ -1,0 +1,227 @@
+/*
+#4835d4 Purple
+ */
+
+@font-face {
+    font-family: Poppins;
+    src: url(fonts/Poppins/Poppins-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+body {
+    background-image: -webkit-linear-gradient(136deg, rgb(149, 153, 226) 0%, rgb(139, 198, 236) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding: 100px 0;
+}
+
+h2 {
+    user-select: none;
+}
+
+.main {
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.col_1 {
+    width: 50%;
+    padding: 50px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.col_1 h2 {
+    color: #4835d4;
+}
+
+.col_2 {
+    width: 50%;
+    padding: 50px;
+    background-color: #4835d4;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.col_2 h2 {
+    color: #fff;
+}
+
+#email,
+#address {
+    color: white;
+    font-size: 16px;
+    padding: 10px 5px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgb(145, 145, 145);
+    transition: .2s;
+    resize: none;
+}
+
+#address {
+    color: white;
+    font-size: 16px;
+    padding: 10px 5px;
+    background: none;
+    /* border: none; */
+    border: 1px solid rgb(145, 145, 145);
+    transition: .2s;
+    resize: none;
+
+}
+
+#email::placeholder,
+#address::placeholder,
+#phone_number::placeholder,
+#cnic_number::placeholder {
+    color: rgb(211, 211, 211);
+}
+
+#email:focus {
+    outline: none;
+    border-bottom: 1px solid #fff;
+    transition: .2s;
+}
+
+#address:focus {
+    outline: none;
+    border: 1px solid #fff;
+    transition: .2s;
+}
+
+#phone_number,
+#cnic_number {
+    color: white;
+    font-size: 16px;
+    padding: 10px 5px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgb(145, 145, 145);
+    transition: .2s;
+    resize: none;
+}
+
+#phone_number:focus,
+#cnic_number:focus {
+    outline: none;
+    border-bottom: 1px solid #fff;
+    transition: .2s;
+}
+
+.input_for_cd {
+    background: none;
+    font-size: 16px;
+    padding: 10px 5px;
+    border: none;
+    border: 1px solid rgb(145, 145, 145);
+    transition: .2s;
+    cursor: pointer;
+    color: white;
+}
+
+.input_for_cd:focus {
+    border: 1px solid #fff;
+    outline: none;
+    transition: .2s;
+}
+
+.input_for_cd:focus option {
+    background-color: #4835d4;
+}
+
+.input_for_gi {
+    color: #4835d4;
+    font-size: 16px;
+    padding: 10px 5px;
+    border: none;
+    border-bottom: 1px solid rgb(204, 204, 204);
+    transition: .2s;
+    cursor: pointer;
+}
+
+.input_for_gi:focus {
+    outline: none;
+    border-bottom: 1px solid #4835d4;
+    transition: .2s;
+}
+
+.select_gender,
+.d_o_b {
+    transition: .2s;
+    border: 1px solid rgb(204, 204, 204);
+}
+
+.select_gender:focus,
+.d_o_b:focus {
+    transition: .2s;
+    border: 1px solid #4835d4;
+}
+
+#upload_file {
+    display: none;
+}
+
+#label_for_file_upload {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px dashed #000;
+    font-size: 14px;
+    padding: 5px;
+    transition: .2s;
+}
+
+#label_for_file_upload:hover {
+    border-color: #4835d4;
+    transition: .2s;
+}
+
+.image {
+    display: flex;
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.image img {
+    object-fit: cover !important;
+}
+
+.upload_image_div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#submit {
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    color: #4835d4;
+    border-bottom-right-radius: 10px;
+    padding: 10px 5px;
+    transition: .2s;
+}
+
+#submit:active {
+    transition: .2s;
+    opacity: .6;
+}
